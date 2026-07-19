@@ -272,6 +272,10 @@ function ProductList({ onHomeClick }) {
         }));
     };
 
+    const updateAddedToCart = (newArray) => {
+        setAddedToCart(newArray);
+    };
+
     const calculateTotalQuantity = () => { 
         return cart ? cart.reduce((total, item) => total + item.quantity, 0) : 0; 
     };
@@ -332,7 +336,7 @@ function ProductList({ onHomeClick }) {
                     ))}
                 </div>
             ) : (
-                <CartItem onContinueShopping={handleContinueShopping} />
+                <CartItem onContinueShopping={handleContinueShopping} addedToCartList={addedToCart} />
             )}
         </div>
     );
