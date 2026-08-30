@@ -223,7 +223,7 @@ function ProductList({ onHomeClick }) {
     const styleObj = {
         backgroundColor: '#4CAF50',
         color: '#fff!important',
-        padding: '15px',
+        padding: '0px',
         display: 'flex',
         justifyContent: 'space-between',
         alignIems: 'center',
@@ -233,17 +233,32 @@ function ProductList({ onHomeClick }) {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        width: '1100px',
+        width: '60%',
+        'padding-right': '20px'
     }
     const styleA = {
         color: 'white',
         fontSize: '30px',
         textDecoration: 'none',
+        'position': 'relative',
+        'width': '100%',
+        'max-width': '600px',
+        'margin': '0 auto',
     }
     const totalQuantityCart = {
-        position: 'absolute',
-        top: '32px',
-        right: '40px',
+        //position: 'absolute',
+        //top: '27px',
+        //right: '35px',
+        'position': 'absolute',
+        'top': '0',
+        'left': '0',
+        'width': '100%',
+        'height': '100%',
+        'display': 'flex',
+        'justify-content': 'center',
+        'align-items': 'center',
+        'color': 'white',
+        'box-sizing': 'border-box',
     }
 
     const handleHomeClick = (e) => {
